@@ -1,4 +1,6 @@
+#-------------Crear el schema----------------------#
 CREATE SCHEMA IF NOT EXISTS minimarketJose_schema;
+#--------------Crear las tablas del minimarket con sus atributos--------#
 CREATE TABLE `minimarketJose_schema`.`vendedor`(
 PRIMARY KEY(`vendedor_id`),
 `vendedor_id` INT NOT NULL AUTO_INCREMENT,
@@ -46,7 +48,7 @@ PRIMARY KEY(`tipoProducto_id`),
 `nombre` VARCHAR (40) NOT NULL);
 
 
-
+#---------------------Asociar tablas con las llaves foraneas-----------------#
 ALTER TABLE minimarketJose_schema.venta ADD vendedor_id INT NOT NULL;
 ALTER TABLE minimarketJose_schema.venta ADD CONSTRAINT vendedorVenta FOREIGN KEY (vendedor_id) REFERENCES minimarketJose_schema.vendedor(vendedor_id);
 ALTER TABLE minimarketJose_schema.venta ADD cliente_id INT NOT NULL;

@@ -11,6 +11,7 @@ INSERT INTO minimarketJose_schema.cliente (nombre, rut, correo)
 VALUES('Nico', 191866819, 'nico2795@gmail.com');
 INSERT INTO minimarketJose_schema.cliente (nombre, rut, correo)
 VALUES('Marco', 192584961, 'marco@gmail.com');
+#-------------------PROVEEDOR-------------------------------------#
 INSERT INTO minimarketJose_schema.proveedor (nombre, direccion, telefono)
 VALUES('Nicole', 'casanicole123', 123456789);
 #--------------------TIPOS DE PRODUCTO----------------------------#
